@@ -1,0 +1,36 @@
+.CharacterCard{
+  box-sizing: border-box;
+  margin: .5rem;
+  display: flex;
+  max-height: 360px;
+  max-width: 300px;
+  flex-direction: column;
+  font-family:'Roboto Mono''monospace';
+  font-weight: 600;
+  background-color: #151515;
+  color: #fff;
+}
+img{
+  min-height: 162.5px;
+  border-bottom: 4px solid #C00;
+}
+.CardBody{
+  padding: 16px 10px 17px;
+
+}
+.CardTitle{
+  font-family: 'Roboto Mono' 'monospace';
+  font-size: 16px;
+}
+ul{
+  list-style: none;
+}
+p{
+  font-size: 12px;
+}
+.CharacterCard:hover{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}

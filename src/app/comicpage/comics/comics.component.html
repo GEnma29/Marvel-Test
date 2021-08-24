@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="searchbar">
+    <div class="containericon">
+      <span class="material-icons-outlined"> search </span>
+    </div>
+    <input
+      type="text"
+      name="filterComics"
+      placeholder="Search"
+      [(ngModel)]="filterComics"
+    />
+  </div>
+  <div class="wrapper">
+    <app-card
+      *ngFor="let comic of allComics | async "
+      [DataCard]="comic"
+    ></app-card>
+  </div>
+  <div></div>
+</div>

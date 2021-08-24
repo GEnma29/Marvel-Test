@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="searchbar">
+      <div class="containericon">
+        <span class="material-icons-outlined">
+          search
+        </span>
+      </div>
+      <input type="text" name="filterCharacters" placeholder="Search">
+    </div>
+  <div class="wrapper">
+    <app-card-creator
+        *ngFor="let creator of AllCreator | async "
+        [DataCard]="creator"
+        ></app-card-creator>
+  </div>
+    </div>

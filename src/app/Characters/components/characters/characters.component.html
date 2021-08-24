@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="searchbar">
+    <div class="containericon">
+      <span class="material-icons-outlined">
+        search
+      </span>
+    </div>
+    <input type="text" name="filterCharacters" placeholder="Search" [(ngModel)]="filterCharacters">
+  </div>
+<div class="wrapper">
+  <app-character-card
+      *ngFor="let character of allCharacters | async | filter:filterCharacters"
+      [DataCard]="character"
+      ></app-character-card>
+</div>
+<div>

@@ -1,0 +1,18 @@
+<a href="/character/{{DataCard?.id}}" class="CharacterCard"> 
+  <img src="{{DataCard?.thumbnail.path}}.{{DataCard?.thumbnail.extension}}" alt="">
+  <div class="CardBody">
+    <h3 class="CardTitle">{{DataCard?.name}}</h3>
+  <p>appers on comics</p>
+  <ul>
+    <li>
+      <p>{{DataCard?.comics.available}}</p>
+    </li>
+  </ul>
+  <p>appears on series</p>
+  <ul>
+    <li>
+      <p>{{DataCard?.series.available}}</p>
+    </li>
+  </ul>
+  </div>
+</a>

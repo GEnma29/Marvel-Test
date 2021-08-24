@@ -1,0 +1,15 @@
+
+.footer {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  color: #fff;
+  min-height: 40px;
+}
+.text-white{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+
+}
