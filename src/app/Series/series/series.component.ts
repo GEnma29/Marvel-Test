@@ -23,4 +23,5 @@ export class SeriesComponent implements OnInit {
     return this.AllSeries = this.seriesServicios.getAllSeries();
     
   }
+
 }

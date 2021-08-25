@@ -9,6 +9,7 @@ import { ServicesCreatorsService } from '../services/services-creators.service';
 export class CreatorsComponent implements OnInit {
 public AllCreator: any;
   constructor(private serviceCreator:ServicesCreatorsService) { }
+  filterCreator=""
 
   ngOnInit(): void {
     this.getAllCreator();

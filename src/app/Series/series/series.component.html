@@ -12,10 +12,10 @@
       />
     </div>
     <div class="wrapper">
-      <app-card
-        *ngFor="let serie of AllSeries | async "
+      <app-card-series
+        *ngFor="let serie of AllSeries | async |filtro:filterSeries "
         [DataCard]="serie"
-      ></app-card>
+      ></app-card-series>
     </div>
     <div></div>
   </div>

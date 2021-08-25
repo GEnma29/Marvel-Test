@@ -7,7 +7,7 @@ export class DescriptionNullPipe implements PipeTransform {
 
   transform(value: string): string {
 
-    if(value ===""){
+    if(value ==="" || value=== null){
 
       return "the description no are avalible, the people are so lazy man"
 

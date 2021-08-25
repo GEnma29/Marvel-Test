@@ -1,1 +1,20 @@
-<p>comic works!</p>
+<div class="Container">
+    <app-details-page-comic [DataPage]="DataComic"></app-details-page-comic>
+    <div class="comics">
+    <h2 class="subtitle">Characters:</h2>
+    <div class="wrapper">
+      <app-character-card
+      *ngFor="let character of Characters | async "
+      [DataCard]="character"
+      ></app-character-card>
+  </div>
+  <h2 class="subtitle">Creators:</h2>
+  <div class="wrapper">
+    <app-card-creator
+    *ngFor="let creator of Creators | async "
+    [DataCard]="creator"
+    ></app-card-creator>
+  </div>
+  </div>
+
+

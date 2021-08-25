@@ -1,6 +1,5 @@
 <div class="Container">
   <app-details-page [DataPage]="DataCharacter"> </app-details-page>
-
     <h2 class="comics">Comics:</h2>
     <div class="wrapper">
       <app-card
@@ -10,10 +9,10 @@
   </div>
   <h2>Series:</h2>
   <div class="wrapper">
-    <app-card
+    <app-card-series
       *ngFor="let serie of Series | async"
       [DataCard]="serie"
-    ></app-card>
+    ></app-card-series>
 </div>
 
 </div>

@@ -22,6 +22,13 @@ import { CreatorComponent } from './creatorspage/creator/creator.component';
 import { SeriesComponent } from './Series/series/series.component';
 import { SerieComponent } from './Series/serie/serie.component';
 import { CardCreatorComponent } from './creatorspage/components/card-creator/card-creator.component';
+import { CardSeriesComponent } from './Series/components/card-series/card-series.component';
+import { DetailsPageComicComponent } from './comicpage/components/details-page-comic/details-page-comic.component';
+import { DetailsPageCreatorComponent } from './creatorspage/components/details-page-creator/details-page-creator.component';
+import { DetailsPageSeriesComponent } from './Series/components/details-page-series/details-page-series.component';
+import { FiltroPipe } from './pipe/filtro.pipe';
+import { FiltroComicsPipe } from './pipes/filtro-comics.pipe';
+import { FiltroCreatorPipe } from './pipes/filtro-creator.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +48,14 @@ import { CardCreatorComponent } from './creatorspage/components/card-creator/car
     CreatorComponent,
     SeriesComponent,
     SerieComponent,
-    CardCreatorComponent
+    CardCreatorComponent,
+    CardSeriesComponent,
+    DetailsPageComicComponent,
+    DetailsPageCreatorComponent,
+    DetailsPageSeriesComponent,
+    FiltroPipe,
+    FiltroComicsPipe,
+    FiltroCreatorPipe
   ],
   imports: [
     BrowserModule,

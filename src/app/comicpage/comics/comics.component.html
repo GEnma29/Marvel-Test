@@ -12,7 +12,7 @@
   </div>
   <div class="wrapper">
     <app-card
-      *ngFor="let comic of allComics | async "
+      *ngFor="let comic of allComics | async | filtroComics:filterComics"
       [DataCard]="comic"
     ></app-card>
   </div>

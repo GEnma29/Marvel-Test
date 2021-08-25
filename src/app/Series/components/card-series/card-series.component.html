@@ -1,8 +1,10 @@
-<a href="/comics/{{DataCard?.id}}" class="Card">
+<a href="/series/{{DataCard?.id}}" class="Card">
     <img src="{{DataCard?.thumbnail.path}}.{{DataCard?.thumbnail.extension}}" alt="{{DataCard?.title}}">
     <div>
         <h3 class="CardTitle">{{DataCard?.title}}</h3>
             <p>{{DataCard?.creators.items.name}}</p>
-            <p>price: <span class="price">{{DataCard?.prices[0].price}}$</span></p>
+            <p>type: <span class="price">{{DataCard?.type}}</span></p>
+            <p>Start Year:{{DataCard?.startYear}}</p>
+            <p>End Year:{{DataCard?.endYear}}</p>
     </div>
 </a>

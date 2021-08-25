@@ -1,1 +1,16 @@
-<p>creator works!</p>
+<div class="Container">
+    <app-details-page-creator [DataPage]="DataCreator"> </app-details-page-creator>
+      <h2 class="comics">Comics:</h2>
+      <div class="wrapper">
+        <app-card
+          *ngFor="let comic of Comics | async "
+          [DataCard]="comic"
+        ></app-card>
+    </div>
+    <h2>Series:</h2>
+    <div class="wrapper">
+      <app-card-series
+        *ngFor="let serie of Series | async"
+        [DataCard]="serie"
+      ></app-card-series>
+  </div>

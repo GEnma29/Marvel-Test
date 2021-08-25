@@ -5,11 +5,11 @@
           search
         </span>
       </div>
-      <input type="text" name="filterCharacters" placeholder="Search">
+      <input type="text" name="filterCharacters" placeholder="Search"  [(ngModel)]="filterCreator">
     </div>
   <div class="wrapper">
     <app-card-creator
-        *ngFor="let creator of AllCreator | async "
+        *ngFor="let creator of AllCreator | async  "
         [DataCard]="creator"
         ></app-card-creator>
   </div>

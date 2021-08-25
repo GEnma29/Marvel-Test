@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import {SeriesReques} from '../../models'
 @Injectable({
   providedIn: 'root'
 })
@@ -13,7 +14,7 @@ export class ServiciosService {
 
   public get(url:string){
 
-    return this.http.get(url)
+    return this.http.get<SeriesReques>(url)
   }
   public getAllSeries(){
 
@@ -22,5 +23,12 @@ export class ServiciosService {
     return this.get(Urlapi).pipe(map((data:any)=>data.data.results))
 
   }
+  public getCreators(id:string){
+    const Urlapi= `https://gateway.marvel.com:443/v1/public/series/${id}/creators?ts=1&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`
+
+    return this.http.get(Urlapi).pipe(map((resp:any)=> resp.data.results))
+    
+  }
+
 
 }

@@ -1,1 +1,13 @@
-<p>serie works!</p>
+<div class="Container">
+    <app-details-page-series [DataPage]="DataSerie"> </app-details-page-series>
+    <div class="components">
+      <h2 class="comics">Creators:</h2>
+      <div class="wrapper">
+        <app-card-creator
+          *ngFor="let creator of Creators | async"
+          [DataCard]="creator"
+        ></app-card-creator>
+    </div>
+  </div>
+  </div>
+

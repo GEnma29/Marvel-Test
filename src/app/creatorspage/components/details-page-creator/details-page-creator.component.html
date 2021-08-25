@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="card">
+      <div class="ImgContainer">
+      <img  src="{{DataPage?.thumbnail.path}}.{{DataPage?.thumbnail.extension}}" alt="">
+      </div>
+      <div class="Cardcontent">
+        <div class="containerName">
+      <h2>{{DataPage?.fullName}}</h2>
+        </div>
+      <p>{{DataPage?.description | descriptionNull}}</p>
+        </div> 
+     </div>
+  </div>
